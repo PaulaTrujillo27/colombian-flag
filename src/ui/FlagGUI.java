@@ -27,15 +27,15 @@ public class FlagGUI {
     }
 
     public void initializeColor() {
-    	flagArray[0] = new Flag("y", 0, 0, 0, 100, 10);
-    	flagArray[1] = new Flag("b", 10, 0, 10, 100, 17);
-    	flagArray[2] = new Flag("r", 17, 0, 17, 100, 22);
+    	flagArray[0] = new Flag("y", 0, 0, 0, 100, 20);
+    	flagArray[1] = new Flag("b", 20, 0, 20, 100, 30);
+    	flagArray[2] = new Flag("r", 30, 0, 30, 100, 40);
     }
 
     public void initilalizeThread() {
-    	threadArray[0] = new FlagThread(flagArray[0], this, 10);
-    	threadArray[1] = new FlagThread(flagArray[1], this, 30);
-    	threadArray[2] = new FlagThread(flagArray[2], this, 50);
+    	threadArray[0] = new FlagThread(flagArray[0], this, 15);
+    	threadArray[1] = new FlagThread(flagArray[1], this, 40);
+    	threadArray[2] = new FlagThread(flagArray[2], this, 45);
     }
     
     public void changeFlag(int horizontal, int vertical, String color) {
